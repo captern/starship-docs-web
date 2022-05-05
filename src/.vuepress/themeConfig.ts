@@ -30,7 +30,7 @@ export default defineThemeConfig({
   logo: "/logo.svg",
   repo: "https://github.com/captern/starship-docs-web",
   // repo: "http://gitlab.voneyun.com/frontend/adan-core-web",
-  docsDir: "demo/src",
+  docsDir: "src",
   // blog: {
   //   medias: {
   //     Baidu: "https://example.com",
