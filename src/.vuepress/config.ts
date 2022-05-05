@@ -3,8 +3,8 @@ import { path } from "@vuepress/utils";
 import themeConfig from "./themeConfig";
 
 export default defineHopeConfig({
-  base: "/",
-  dest: "./dist",
+  base: "/docs/",
+  dest: "./dist/docs",
   head: [
     [
       "link",
@@ -14,7 +14,7 @@ export default defineHopeConfig({
       },
     ],
     [
-      'script', {type: 'text/javascript', src: '/micorder/js/text.js'}
+      'script', {type: 'text/javascript', src: '/docs/js/text.js'}
     ],
     [
       'script', {type: 'text/javascript', src: '//cdn.bootcss.com/jquery/3.4.1/jquery.min.js'}
