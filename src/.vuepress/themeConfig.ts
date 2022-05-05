@@ -28,7 +28,7 @@ export default defineThemeConfig({
   ],
   iconPrefix: "iconfont icon-",
   logo: "/logo.svg",
-  repo: "https://gitee.com/captern/react_cms",
+  repo: "https://gitee.com/captern/starship-docs-web",
   // repo: "http://gitlab.voneyun.com/frontend/adan-core-web",
   docsDir: "demo/src",
   // blog: {
