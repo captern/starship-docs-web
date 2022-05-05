@@ -1,0 +1,33 @@
+:root{
+  .navbar{
+  }
+  .sidebar{
+    // max-height: calc(100vh - 238px);
+    max-width: 300px;
+    position: fixed;
+    // top: 0;
+    left: calc(50vw - 700px);
+    max-height: auto;
+  }
+  #main-content{
+    min-height: calc(100vh - 60px - 238px);
+    background: #F5F7FA;
+    .breadcrumb{
+      background: #fff;
+      // margin-top: -40px;
+    }
+    .page-title{
+      background: #fff;
+    }
+    .toc-place-holder{
+      background: #fff;
+    }
+    .toc-place-holder{
+      // margin-top: -140px;
+    }
+    .theme-hope-content{
+      margin: 0 auto;
+      background: #fff;
+    }
+  }
+}

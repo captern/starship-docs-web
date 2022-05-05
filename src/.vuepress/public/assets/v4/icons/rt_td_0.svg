@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="2px" viewBox="0 0 20 2" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>没有备份 20</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.000000 0 0 0 0 0.356863 0 0 0 0 0.635294 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="二期" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="没有备份-20" transform="translate(-142.000000, -607.000000)" filter="url(#filter-1)">
+            <g transform="translate(142.000000, 607.000000)">
+                <rect id="矩形" fill="#D8D8D8" x="0" y="0" width="8" height="2"></rect>
+                <rect id="矩形备份-18" fill="#D8D8D8" x="12" y="0" width="8" height="2"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

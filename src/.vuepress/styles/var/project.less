@@ -1,0 +1,456 @@
+// 网页公共样式
+#__nuxt {
+  min-width: @page_width_min;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: auto;
+}
+
+// 思源黑体
+@font-face {
+  font-family: NotoSansHans-Regular;
+  src: url(./fonts/NotoSansHans-Regular.otf);
+}
+
+@font-face {
+  font-family: NotoSansHans-Medium;
+  src: url(./fonts/NotoSansHans-Medium.otf);
+}
+
+.font-reg {
+  font-family: NotoSansHans-Regular;
+}
+
+.font-bold {
+  font-family: NotoSansHans-Medium;
+}
+
+body,
+html {
+  font-family: NotoSansHans-Regular, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
+}
+
+.title {
+  font-family: NotoSansHans-Medium;
+}
+
+#app {
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.main-container {
+  width: 100%;
+  max-width: 1500px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.main-color {
+  color: @color_primary;
+}
+
+.btn-main {
+  display: inline-block;
+  padding: 0 15px;
+  min-width: 138px;
+  height: 42px;
+  line-height: 42px;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  background-color: @color_primary;
+  border-radius: 4px;
+  cursor: pointer;
+  user-select: none;
+  transition: all linear 0.3s;
+  &:hover {
+    background-color: @color_hover;
+  }
+  &.disabled {
+    cursor: not-allowed;
+    background-color: fade(@color_primary, 30%);
+  }
+}
+.btn-cancel {
+  display: inline-block;
+  padding: 0 15px;
+  min-width: 138px;
+  height: 42px;
+  line-height: 40px;
+  font-size: 16px;
+  color: @color_primary;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid @color_primary;
+  border-radius: 4px;
+  cursor: pointer;
+  user-select: none;
+  transition: all linear 0.3s;
+  &:hover {
+    color: white;
+    background-color: @color_primary;
+  }
+  &.disabled, &.disabled:hover {
+    cursor: not-allowed;
+    background-color: transparent;
+    color: fade(@color_primary, 60%);
+    border-color: fade(@color_primary, 60%);
+  }
+}
+
+.btn-link {
+  font-size: 12px;
+  color: #666;
+  transition: all linear 0.3s;
+  &:hover {
+    color: @color_primary;
+  }
+}
+
+.animate-scroll {
+  transition: all linear .5s;
+}
+
+.animate-scroll-visible {
+  opacity: 1 !important;
+  transform: translateY(0);
+}
+
+.animate-scroll-hidden {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+
+// 网页公共样式
+.bg-white {
+  background-color: white;
+}
+
+.main-container {
+  width: 100%;
+  max-width: 1500px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.main-color {
+  color: @color_primary;
+}
+
+.normal-section {
+  overflow: hidden;
+  background: white;
+  &.bg-gray {
+    position: relative;
+    background: #F5F7FA;
+    & > div {
+      position: relative;
+      z-index: 1;
+    }
+
+    &.lt-rb-bg {
+      &::before {
+        content: '';
+        position: absolute;
+        display: inline-block;
+        left: 0;
+        top: 0;
+        width: 10.42vw;
+        height: 10.16vw;
+        background: url('@assets/images_v2/section_bg1.png') center center / 100% 100% no-repeat;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        display: inline-block;
+        right: 0;
+        bottom: 0;
+        width: 10.21vw;
+        height: 15.31vw;
+        background: url('@assets/images_v2/section_bg2.png') center center / 100% 100% no-repeat;
+      }
+    }
+
+  }
+  .section-title {
+    margin-top: 64px;
+    font-size: 30px;
+    color: #333;
+    text-align: center;
+    line-height: 42px;
+  }
+  .sub-title {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #999;
+    line-height: 22px;
+    text-align: center;
+  }
+}
+
+// 富文本样式重置
+.article-container{
+  table caption {
+    text-align: center;
+    caption-side: top;
+    color: blue;
+  }
+  
+  p, ul, menu, dir,h3{
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+  h1{
+    font-weight: bold ;
+    font-size: 32px ;
+    margin: 21px 0 ;
+  }
+  h2{
+    font-weight: bold ;
+    font-size: 24px ;
+    margin: 19px 0 ;
+  }
+  h3{
+    font-weight: bold ;
+    font-size: 19px ;
+    margin: 18px 0 ;
+  }
+  h4{
+    font-weight: bold ;
+    font-size: 16px ;
+    margin: 21px 0 ;
+  }
+  h5{
+    font-weight: bold ;
+    font-size: 13px ;
+    margin: 22px 0 ;
+  }
+  h6{
+    font-weight: bold ;
+    font-size: 11px ;
+    margin: 24px 0 ;
+  }
+  option{
+    padding: 0px 2px 1px;
+  }
+  input{
+    padding: 1px;
+  }
+  fieldset{
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    padding-block-start: 0.35em;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
+    padding-block-end: 0.625em;
+  }
+  textarea{
+    padding: 2px;
+  }
+  legend{
+    padding-inline-start: 2px;
+    padding-inline-end: 2px;
+  }
+  a{
+    display: inline;
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  ul{
+    padding-left: 40px ;
+    padding-right: 40px ;
+    list-style: disc;
+    li{
+      display: list-item ;
+      list-style: disc;
+    }
+  }
+
+  ol, ul, dl {
+    margin-top: 0;
+    margin-bottom: 1em;
+  }
+  
+  ol {
+    padding-left: 40px ;
+    padding-right: 40px ;
+    list-style: disc;
+    li{
+      list-style: decimal;
+    }
+  }
+
+  img{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+  }
+}
+
+// banner 样式
+.top-banner {
+  width: 100%;
+  height: 352px;
+  position: relative;
+  .banner-bg {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+    height: 100%;
+    object-fit: cover;
+  }
+  .main-container {
+    position: relative;
+    height: 100%;
+    padding: 0 60px;
+    z-index: 1;
+    .banner-h1 {
+      font-size: 30px;
+      color: #333;
+    }
+    .banner-content {      
+      width: 720px;
+      margin-bottom: 36px;
+      font-size: 16px;
+      color: #666;
+      line-height: 25px;
+    }
+    .btn-main {
+      width: 138px;
+    }
+
+    &.font-white {
+      .banner-h1 {
+        color: #fff;
+      }
+      .banner-content {
+        color: #fff;
+      }
+    }
+  }
+}
+
+// 弹窗样式
+.fade {
+  transition: opacity .15s linear;
+}
+.modal-open {
+  overflow: hidden;
+  .modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+}
+
+// 通知弹窗样式
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  overflow: hidden;
+  outline: 0;
+  background-color: fade(#000, 50%);
+
+  .modal-dialog {
+    position: relative;
+    width: 980px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    min-height: calc(100% - (.5rem * 2));
+    pointer-events: none;
+  }
+
+  .modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: .3rem;
+    outline: 0;
+    box-shadow: 0 3px 8px fade(#000, 5%);
+
+    .modal-header {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 65px 10px 25px;
+      height: 68px;
+      font-size: 16px;
+      color: #fff;
+      text-align: center;
+      background: right bottom / auto 100% no-repeat;
+    }
+    .btn-close {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      right: 28px;
+      top: 50%;
+      width: 24px;
+      height: 24px;
+      transform: translateY(-50%);
+      cursor: pointer;
+      .icon-close {
+        font-size: 16px;
+      }
+    }
+    .modal-body {
+      flex: 1;
+      padding: 15px 25px 25px;
+      min-height: 220px;
+      max-height: 60vh;
+      font-size: 14px;
+      overflow: auto;
+      color: #666;
+    }
+    .modal-footer {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 15px 25px;
+      border-radius: 0 0 3px 3px;
+
+      .btn-main {
+        min-width: auto;
+        height: 36px;
+        line-height: 36px;
+        &:not(:last-child) {
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+
+  &.fade {
+    .modal-dialog {
+      transition: transform .3s ease-out;
+      transform: translate(0,-25%);
+    }
+  }
+
+  &.show {
+    .modal-dialog {
+      transform: translate(0, 0);
+    }
+  }
+}
